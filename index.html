@@ -1,24 +1,303 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Spotify</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="app-container">
-            <div class="top-section">
-                <div class="sidebar"></div>
-                <div class="main-content">
-                    <header>
-                        <h3>Test</h3>
-                    </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css' integrity='sha512-Q0DfJ+I5cbH4Wm20NlPZ/fENHil7k3ZgzI9b71LfQAB1IlM8Gt7aO7eOPX2QzYT+4fZaF6u1kSfZAHczl4r/9Q==' crossorigin='anonymous'/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>Spotify</title>
+</head>
+<body>
+
+    <!-- APP 100% VIEWPORT -->
+    <div class="app flex-column">
+
+        <!-- MAIN CONTAINER  -->
+        <div class="container flex-row">
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar bg-black flex-column px20">
+                <div class="brand my20">
+                    <a href="#">
+                        <img src="./img/logo.svg" alt="spotify logo">
+                        <img src="./img/logo-small.svg" alt="small-logo" class="small">
+                    </a>
+                </div>
+
+                <div class="side-nav">
+                    <ul class="menu my20">
+                        <li>
+                            <a class="link flex-row" href="#">
+                                <img src="./img/home.svg" alt="home">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link flex-row" href="#">
+                                <img src="./img/search.svg" alt="home">
+                                <span>Cerca</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link flex-row" href="#">
+                                <img src="./img/libreria.svg" alt="home">
+                                <span>La tua libreria</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="playlist-menu">
+                        <h3>PLAYLIST</h3>
+                        <ul class="menu">
+                            <li>
+                                <a class="link flex-row" href="#">
+                                    <i class="fas fa-plus-square"></i>
+                                    <span>Crea Playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link flex-row" href="#">
+                                    <span>Nome Playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link flex-row" href="#">
+                                    <span>Nome Playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link flex-row" href="#">
+                                    <span>Nome Playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link flex-row" href="#">
+                                    <span>Nome Playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link flex-row" href="#">
+                                    <span>Nome Playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link flex-row" href="#">
+                                    <span>Nome Playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link flex-row" href="#">
+                                    <span>Nome Playlist</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sidebar-footer">
+                    <div class="install">
+                        <a class="link flex-row" href="#">
+                            <img src="./img/download.svg" alt="download">
+                            <span>Installa app</span>
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="profile flex-row">
+                        <div class="thumb">
+                            <img src="./img/profile.svg" alt="profile">
+                        </div>
+                        <span class="user">John Doe</span>
+                    </div>
+                </div>
+
+            </aside>
+
+            <!-- MAIN CONTENT -->
+            <main class="bg-main flex-column px20">
+
+                <!-- FIXED HEADER  -->
+                <div class="fixed-header flex-row px20">
+                    <div class="cta">
+                        <button class="btn">
+                            Effettua l'upgrade
+                        </button>
+                    </div>
+                </div>
+
+                <!-- MAIN NAVIGATION -->
+                <nav>
+                    <ul class="menu flex-row">
+                        <li>
+                            <a href="#">IN EVIDENZA</a>
+                        </li>
+                        <li>
+                            <a href="#">podcast</a>
+                        </li>
+                        <li>
+                            <a href="#">classifiche</a>
+                        </li>
+                        <li>
+                            <a href="#">generi e mood</a>
+                        </li>
+                        <li>
+                            <a href="#">nuove uscite</a>
+                        </li>
+                        <li>
+                            <a href="#">scopri</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- MUSIC SECTION -->
+                <section>
+                    <h2>Recently played</h2>
+                    <div class="gallery flex-row">  
+                        <div class="card flex-column my20">
+                            <div class="album-cover">
+                                <img src="./img/metal_lifting.jpg" alt="metal">
+                             </div>
+                            <h3>Heavy Metal</h3>
+                            <span class="subtitle">subtitle</span>
+                        </div>
+                        <div class="card flex-column my20">
+                            <div class="album-cover">
+                                <img src="./img/stranger.jpeg" alt="sthings">
+                            </div>
+                            <h3>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack</h3>
+                            <span class="subtitle">Kyle Dixon & Michael Stein</span>
+                        </div>
+                        <div class="card flex-column my20">
+                            <div class="album-cover">
+                                <img src="./img/aquietplace.jpeg" alt="quiet-place">
+                            </div>
+                            <h3>A quiet place</h3>
+                            <span class="subtitle">subtitle</span>
+                        </div>
+                        <div class="card flex-column my20">
+                            <div class="album-cover">
+                                <img src="./img/split.jpeg" alt="metal">
+                            </div>
+                            <h3>Split</h3>
+                            <span class="subtitle">subtitle</span>
+                        </div>
+                        <div class="card flex-column my20">
+                            <div class="album-cover">
+                                <img src="./img/cure.jpeg" alt="cure">
+                            </div>
+                            <h3>A cure for wellness</h3>
+                            <span class="subtitle">subtitle</span>
+                        </div>
+                        <div class="card flex-column my20">
+                            <div class="album-cover">
+                                <img src="./img/sinister.jpeg" alt="metal">
+                            </div>
+                            <h3>Sinister</h3>
+                            <span class="subtitle">subtitle</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Creato per John Doe</h2>
+                    <span class="subtitle">Più ascolti, più accurati saranno i suggerimenti</span>
+                    <div class="gallery flex-row">  
+                        <div class="card flex-column my20">
+                            <div class="album-cover">
+                                <img src="./img/radar.jpeg" alt="radar">
+                            </div>
+                            <h3>Release Radar</h3>
+                        </div>
+                        <div class="card flex-column my20">
+                            <div class="album-cover">
+                                <img src="./img/mixdaily.jpeg" alt="mixdaily">
+                            </div>
+                            <h3>Daily Mix 1</h3>
+                        </div>         
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Artisti più popolari</h2>
+                    <span class="subtitle">Più ascolti, più accurati saranno i suggerimenti</span>
+                    <div class="gallery flex-row round">  
+                        <div class="card flex-column my20">
+                            <div class="album-cover">
+                                <img src="./img/youg.jpeg" alt="lana">
+                            </div>
+                            <h3>Lana del Rey</h3>
+                        </div>
+                        <div class="card flex-column my20">
+                            <div class="album-cover">
+                                <img src="./img/einaudi.jpeg" alt="einaudi">
+                            </div>
+                            <h3>Ludovico Einaudi</h3>
+                        </div>         
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- FOOTER  -->
+        <footer class="flex-row bg-grey">
+            <div class="playing flex-row w20">
+                
+                <img src="./img/sinister.jpeg" alt="sinister">
+                
+                <div class="song">
+                    <h4>Sinister</h4>
+                    <span class="subtitle">
+                        Brano nome
+                    </span>
+                </div>
+                <div class="actions">
+                    <a href="#" class="link">
+                        <i class="far fa-heart"></i>
+                    </a>
+                    <a href="#" class="link">
+                        <i class="far fa-folder"></i>
+                    </a>
                 </div>
             </div>
-            <div class="bottom-section"></div>
-        </div>
-    </body>
 
-</html>    
+            <div class="player flex-column">
+                <div class="control">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo"></i>
+                </div>
+
+                <div class="time-flow flex-row">
+                    <span class="time-point">0:30</span>
+    
+                    <div class="time bar">
+                        <div class="status bar"></div>
+                    </div>
+    
+                    <span class="time-point">5:33</span>
+                </div>
+            </div>
+
+            <div class="device-control flex-row w20">
+                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-up"></i>
+
+                <div class="volume bar">
+                    <div class="status bar"></div>
+                </div>
+            </div>
+            
+
+        </footer>
+
+    </div>
+
+    
+</body>
+</html>
